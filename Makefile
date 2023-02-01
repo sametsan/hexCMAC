@@ -3,8 +3,8 @@ TARGET=hexCMAC
 
 FILES=main.c 
 
-
+FLAGS= -lcrypto
 
 
 all:
-	$(CC) $(FILES) -o $(TARGET)
+	$(CC) $(FILES) $(FLAGS) -o $(TARGET)
